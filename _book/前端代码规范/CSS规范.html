@@ -1,0 +1,851 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title> CSS 规范 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="JavaScript规范.html" />
+    
+    
+    <link rel="prev" href="HTML规范.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../前端开发流程/">
+            
+                <a href="../前端开发流程/">
+            
+                    
+                    前端开发流程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../前端开发流程/开发流程.html">
+            
+                <a href="../前端开发流程/开发流程.html">
+            
+                    
+                    开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../前端开发流程/开发工具.html">
+            
+                <a href="../前端开发流程/开发工具.html">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前端代码规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="命名规则.html">
+            
+                <a href="命名规则.html">
+            
+                    
+                    命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="HTML规范.html">
+            
+                <a href="HTML规范.html">
+            
+                    
+                     HTML 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="CSS规范.html">
+            
+                <a href="CSS规范.html">
+            
+                    
+                     CSS 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="JavaScript规范.html">
+            
+                <a href="JavaScript规范.html">
+            
+                    
+                     JavaScript 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Vue规范.html">
+            
+                <a href="Vue规范.html">
+            
+                    
+                     Vue 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." > CSS 规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css-&#x89C4;&#x8303;">CSS &#x89C4;&#x8303;</h1>
+<p><strong>&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868; (CSS)</strong></p>
+<blockquote>
+<p>&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868;&#xFF08;CSS&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x8BED;&#x8A00;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4F7F;&#x7528;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x6587;&#x6863;&#x7684;&#x5916;&#x89C2;&#x548C;&#x683C;&#x5F0F;&#x3002;&#x5C3D;&#x7BA1;&#x6837;&#x5F0F;&#x8868;&#x901A;&#x5E38;&#x88AB;&#x7528;&#x6765;&#x6539;&#x53D8;&#x4EE5; HTML &#x548C; XHTML &#x7684;&#x65B9;&#x5F0F;&#x7F16;&#x5199;&#x7684;&#x7F51;&#x9875;&#x548C;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5B83;&#x4E5F;&#x80FD;&#x88AB;&#x8FD0;&#x7528;&#x5728;&#x4EFB;&#x4F55;&#x4F7F;&#x7528; XML &#x7F16;&#x5199;&#x7684;&#x6587;&#x6863;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC; XML&#xFF0C;SVG &#x548C; XUL&#x3002;&#x540C; HTML &#x548C; Javascript &#x4E00;&#x6837;&#xFF0C;CSS &#x662F;&#x7528;&#x4EE5;&#x6784;&#x5EFA;&#x5177;&#x6709;&#x89C6;&#x89C9;&#x51B2;&#x51FB;&#x529B;&#x7684;&#x7F51;&#x9875;&#x548C;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;&#x57FA;&#x7840;&#x6280;&#x672F;&#x3002;</p>
+</blockquote>
+<h2 id="&#x547D;&#x540D;">&#x547D;&#x540D;</h2>
+<ul>
+<li>&#x7C7B;&#x540D;&#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x4EE5;&#x4E2D;&#x5212;&#x7EBF;&#x5206;&#x9694;</li>
+<li>id&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x5F0F;&#x547D;&#x540D;</li>
+<li>scss&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x3001;&#x51FD;&#x6570;&#x3001;&#x6DF7;&#x5408;&#x3001;placeholder&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x5F0F;&#x547D;&#x540D;</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-selector-class">.element</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">10px</span>;
+
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+}
+</code></pre>
+<h2 id="&#x989C;&#x8272;">&#x989C;&#x8272;</h2>
+<p>&#x989C;&#x8272;16&#x8FDB;&#x5236;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF1B;</p>
+<p>&#x989C;&#x8272;16&#x8FDB;&#x5236;&#x5C3D;&#x91CF;&#x7528;&#x7B80;&#x5199;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* not good */</span>
+<span class="hljs-selector-class">.element</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ABCDEF</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#001122</span>;
+}
+
+<span class="hljs-comment">/* good */</span>
+<span class="hljs-selector-class">.element</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#abcdef</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#012</span>;
+}
+</code></pre>
+<h2 id="&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;">&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;</h2>
+<p>&#x5728;&#x9700;&#x8981;&#x663E;&#x793A;&#x5730;&#x8BBE;&#x7F6E;&#x6240;&#x6709;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x5F53;&#x5C3D;&#x91CF;&#x9650;&#x5236;&#x4F7F;&#x7528;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x3002;</p>
+<p>&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x4E3A;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x6307;&#x5B9A;&#x6240;&#x6709;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;HTML &#x7684; heading &#x5143;&#x7D20;&#x53EA;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E0A;&#x3001;&#x4E0B;&#x8FB9;&#x8DDD;&#xFF08;margin&#xFF09;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x5FC5;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x9700;&#x8986;&#x76D6;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x5C31;&#x53EF;&#x4EE5;&#x3002;&#x8FC7;&#x5EA6;&#x4F7F;&#x7528;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x4F1A;&#x5BFC;&#x81F4;&#x4EE3;&#x7801;&#x6DF7;&#x4E71;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x5BF9;&#x5C5E;&#x6027;&#x503C;&#x5E26;&#x6765;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x8986;&#x76D6;&#x4ECE;&#x800C;&#x5F15;&#x8D77;&#x610F;&#x5916;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-comment">/* Bad example */</span>
+<span class="hljs-selector-class">.element</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">background</span>: red;
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;image.jpg&quot;</span>);
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span> <span class="hljs-number">3px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">/* Good example */</span>
+<span class="hljs-selector-class">.element</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">background-color</span>: red;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;image.jpg&quot;</span>);
+  <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">3px</span>;
+  <span class="hljs-attribute">border-top-right-radius</span>: <span class="hljs-number">3px</span>;
+}
+</code></pre>
+<h2 id="&#x7F29;&#x8FDB;">&#x7F29;&#x8FDB;</h2>
+<p>&#x4F7F;&#x7528;2&#x4E2A;&#x7A7A;&#x683C;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.element</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">10px</span>;
+
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+}
+</code></pre>
+<h2 id="&#x5206;&#x53F7;">&#x5206;&#x53F7;</h2>
+<p>&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x672B;&#x5C3E;&#x90FD;&#x8981;&#x52A0;&#x5206;&#x53F7;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.element</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+
+    <span class="hljs-attribute">background-color</span>: red;
+}
+</code></pre>
+<h2 id="&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</h2>
+<p>&#x6CE8;&#x91CA;&#x7EDF;&#x4E00;&#x7528;&apos;/<em> </em>/&apos;&#xFF08;scss&#x4E2D;&#x4E5F;&#x4E0D;&#x8981;&#x7528;&apos;//&apos;&#xFF09;&#xFF1B;</p>
+<p>&#x7F29;&#x8FDB;&#x4E0E;&#x4E0B;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF1B;</p>
+<p>&#x53EF;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x884C;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x4E0E;&#x4EE3;&#x7801;&#x95F4;&#x9694;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</p>
+<pre><code class="lang-css">/* Modal header */
+.modal-header {
+    ...
+}
+
+/*
+ * Modal header
+ */
+.modal-header {
+    ...
+}
+
+.modal-header {
+    /* 50px */
+    width: 50px;
+
+    color: red; /* color red */
+}
+</code></pre>
+<h2 id="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;">&#x5A92;&#x4F53;&#x67E5;&#x8BE2;</h2>
+<p>&#x5C3D;&#x91CF;&#x5C06;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x89C4;&#x5219;&#x9760;&#x8FD1;&#x4E0E;&#x4ED6;&#x4EEC;&#x76F8;&#x5173;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x4E0D;&#x8981;&#x5C06;&#x4ED6;&#x4EEC;&#x4E00;&#x8D77;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6216;&#x8005;&#x4E22;&#x5728;&#x6587;&#x6863;&#x7684;&#x6700;&#x5E95;&#x90E8;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x53EA;&#x4F1A;&#x8BA9;&#x5927;&#x5BB6;&#x4EE5;&#x540E;&#x66F4;&#x5BB9;&#x6613;&#x5FD8;&#x8BB0;&#x4ED6;&#x4EEC;&#x3002;</p>
+<pre><code class="lang-css">.element {
+    ...
+}
+
+.element-avatar{
+    ...
+}
+
+@media (min-width: 480px) {
+    .element {
+        ...
+    }
+
+    .element-avatar {
+        ...
+    }
+}
+</code></pre>
+<h2 id="&#x5F15;&#x53F7;">&#x5F15;&#x53F7;</h2>
+<p>&#x6700;&#x5916;&#x5C42;&#x7EDF;&#x4E00;&#x4F7F;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#xFF1B;</p>
+<p>url&#x7684;&#x5185;&#x5BB9;&#x8981;&#x7528;&#x5F15;&#x53F7;&#xFF1B;</p>
+<p>&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x5F15;&#x53F7;&#x3002;</p>
+<pre><code class="lang-css">.element:after {
+    content: &quot;&quot;;
+    background-image: url(&quot;logo.png&quot;);
+}
+
+li[data-type=&quot;single&quot;] {
+    ...
+}
+</code></pre>
+<h2 id="&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x987A;&#x5E8F;">&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x987A;&#x5E8F;</h2>
+<p>&#x76F8;&#x5173;&#x7684;&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x6309;&#x53F3;&#x8FB9;&#x7684;&#x987A;&#x5E8F;&#x505A;&#x5206;&#x7EC4;&#x5904;&#x7406;&#xFF0C;&#x7EC4;&#x4E4B;&#x95F4;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;&#x3002;</p>
+<pre><code class="lang-css">.declaration-order {
+    display: block;
+    float: right;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+
+    font: normal 13px &quot;Helvetica Neue&quot;, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+
+    color: #333;
+    background-color: #f5f5f5;
+
+    opacity: 1;
+}
+// &#x4E0B;&#x9762;&#x662F;&#x63A8;&#x8350;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x987A;&#x5E8F;
+[
+    [
+        &quot;display&quot;,
+        &quot;visibility&quot;,
+        &quot;float&quot;,
+        &quot;clear&quot;,
+        &quot;overflow&quot;,
+        &quot;overflow-x&quot;,
+        &quot;overflow-y&quot;,
+        &quot;clip&quot;,
+        &quot;zoom&quot;
+    ],
+    [
+        &quot;table-layout&quot;,
+        &quot;empty-cells&quot;,
+        &quot;caption-side&quot;,
+        &quot;border-spacing&quot;,
+        &quot;border-collapse&quot;,
+        &quot;list-style&quot;,
+        &quot;list-style-position&quot;,
+        &quot;list-style-type&quot;,
+        &quot;list-style-image&quot;
+    ],
+    [
+        &quot;-webkit-box-orient&quot;,
+        &quot;-webkit-box-direction&quot;,
+        &quot;-webkit-box-decoration-break&quot;,
+        &quot;-webkit-box-pack&quot;,
+        &quot;-webkit-box-align&quot;,
+        &quot;-webkit-box-flex&quot;
+    ],
+    [
+        &quot;position&quot;,
+        &quot;top&quot;,
+        &quot;right&quot;,
+        &quot;bottom&quot;,
+        &quot;left&quot;,
+        &quot;z-index&quot;
+    ],
+    [
+        &quot;margin&quot;,
+        &quot;margin-top&quot;,
+        &quot;margin-right&quot;,
+        &quot;margin-bottom&quot;,
+        &quot;margin-left&quot;,
+        &quot;-webkit-box-sizing&quot;,
+        &quot;-moz-box-sizing&quot;,
+        &quot;box-sizing&quot;,
+        &quot;border&quot;,
+        &quot;border-width&quot;,
+        &quot;border-style&quot;,
+        &quot;border-color&quot;,
+        &quot;border-top&quot;,
+        &quot;border-top-width&quot;,
+        &quot;border-top-style&quot;,
+        &quot;border-top-color&quot;,
+        &quot;border-right&quot;,
+        &quot;border-right-width&quot;,
+        &quot;border-right-style&quot;,
+        &quot;border-right-color&quot;,
+        &quot;border-bottom&quot;,
+        &quot;border-bottom-width&quot;,
+        &quot;border-bottom-style&quot;,
+        &quot;border-bottom-color&quot;,
+        &quot;border-left&quot;,
+        &quot;border-left-width&quot;,
+        &quot;border-left-style&quot;,
+        &quot;border-left-color&quot;,
+        &quot;-webkit-border-radius&quot;,
+        &quot;-moz-border-radius&quot;,
+        &quot;border-radius&quot;,
+        &quot;-webkit-border-top-left-radius&quot;,
+        &quot;-moz-border-radius-topleft&quot;,
+        &quot;border-top-left-radius&quot;,
+        &quot;-webkit-border-top-right-radius&quot;,
+        &quot;-moz-border-radius-topright&quot;,
+        &quot;border-top-right-radius&quot;,
+        &quot;-webkit-border-bottom-right-radius&quot;,
+        &quot;-moz-border-radius-bottomright&quot;,
+        &quot;border-bottom-right-radius&quot;,
+        &quot;-webkit-border-bottom-left-radius&quot;,
+        &quot;-moz-border-radius-bottomleft&quot;,
+        &quot;border-bottom-left-radius&quot;,
+        &quot;-webkit-border-image&quot;,
+        &quot;-moz-border-image&quot;,
+        &quot;-o-border-image&quot;,
+        &quot;border-image&quot;,
+        &quot;-webkit-border-image-source&quot;,
+        &quot;-moz-border-image-source&quot;,
+        &quot;-o-border-image-source&quot;,
+        &quot;border-image-source&quot;,
+        &quot;-webkit-border-image-slice&quot;,
+        &quot;-moz-border-image-slice&quot;,
+        &quot;-o-border-image-slice&quot;,
+        &quot;border-image-slice&quot;,
+        &quot;-webkit-border-image-width&quot;,
+        &quot;-moz-border-image-width&quot;,
+        &quot;-o-border-image-width&quot;,
+        &quot;border-image-width&quot;,
+        &quot;-webkit-border-image-outset&quot;,
+        &quot;-moz-border-image-outset&quot;,
+        &quot;-o-border-image-outset&quot;,
+        &quot;border-image-outset&quot;,
+        &quot;-webkit-border-image-repeat&quot;,
+        &quot;-moz-border-image-repeat&quot;,
+        &quot;-o-border-image-repeat&quot;,
+        &quot;border-image-repeat&quot;,
+        &quot;padding&quot;,
+        &quot;padding-top&quot;,
+        &quot;padding-right&quot;,
+        &quot;padding-bottom&quot;,
+        &quot;padding-left&quot;,
+        &quot;width&quot;,
+        &quot;min-width&quot;,
+        &quot;max-width&quot;,
+        &quot;height&quot;,
+        &quot;min-height&quot;,
+        &quot;max-height&quot;
+    ],
+    [
+        &quot;font&quot;,
+        &quot;font-family&quot;,
+        &quot;font-size&quot;,
+        &quot;font-weight&quot;,
+        &quot;font-style&quot;,
+        &quot;font-variant&quot;,
+        &quot;font-size-adjust&quot;,
+        &quot;font-stretch&quot;,
+        &quot;font-effect&quot;,
+        &quot;font-emphasize&quot;,
+        &quot;font-emphasize-position&quot;,
+        &quot;font-emphasize-style&quot;,
+        &quot;font-smooth&quot;,
+        &quot;line-height&quot;,
+        &quot;text-align&quot;,
+        &quot;-webkit-text-align-last&quot;,
+        &quot;-moz-text-align-last&quot;,
+        &quot;-ms-text-align-last&quot;,
+        &quot;text-align-last&quot;,
+        &quot;vertical-align&quot;,
+        &quot;white-space&quot;,
+        &quot;text-decoration&quot;,
+        &quot;text-emphasis&quot;,
+        &quot;text-emphasis-color&quot;,
+        &quot;text-emphasis-style&quot;,
+        &quot;text-emphasis-position&quot;,
+        &quot;text-indent&quot;,
+        &quot;-ms-text-justify&quot;,
+        &quot;text-justify&quot;,
+        &quot;letter-spacing&quot;,
+        &quot;word-spacing&quot;,
+        &quot;-ms-writing-mode&quot;,
+        &quot;text-outline&quot;,
+        &quot;text-transform&quot;,
+        &quot;text-wrap&quot;,
+        &quot;-ms-text-overflow&quot;,
+        &quot;text-overflow&quot;,
+        &quot;text-overflow-ellipsis&quot;,
+        &quot;text-overflow-mode&quot;,
+        &quot;-ms-word-wrap&quot;,
+        &quot;word-wrap&quot;,
+        &quot;-ms-word-break&quot;,
+        &quot;word-break&quot;
+    ],
+    [
+        &quot;color&quot;,
+        &quot;background&quot;,
+        &quot;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader&quot;,
+        &quot;background-color&quot;,
+        &quot;background-image&quot;,
+        &quot;background-repeat&quot;,
+        &quot;background-attachment&quot;,
+        &quot;background-position&quot;,
+        &quot;-ms-background-position-x&quot;,
+        &quot;background-position-x&quot;,
+        &quot;-ms-background-position-y&quot;,
+        &quot;background-position-y&quot;,
+        &quot;-webkit-background-clip&quot;,
+        &quot;-moz-background-clip&quot;,
+        &quot;background-clip&quot;,
+        &quot;background-origin&quot;,
+        &quot;-webkit-background-size&quot;,
+        &quot;-moz-background-size&quot;,
+        &quot;-o-background-size&quot;,
+        &quot;background-size&quot;
+    ],
+    [
+        &quot;outline&quot;,
+        &quot;outline-width&quot;,
+        &quot;outline-style&quot;,
+        &quot;outline-color&quot;,
+        &quot;outline-offset&quot;,
+        &quot;opacity&quot;,
+        &quot;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity&quot;,
+        &quot;-ms-filter:\\&apos;progid:DXImageTransform.Microsoft.Alpha&quot;,
+        &quot;-ms-interpolation-mode&quot;,
+        &quot;-webkit-box-shadow&quot;,
+        &quot;-moz-box-shadow&quot;,
+        &quot;box-shadow&quot;,
+        &quot;filter:progid:DXImageTransform.Microsoft.gradient&quot;,
+        &quot;-ms-filter:\\&apos;progid:DXImageTransform.Microsoft.gradient&quot;,
+        &quot;text-shadow&quot;
+    ],
+    [
+        &quot;-webkit-transition&quot;,
+        &quot;-moz-transition&quot;,
+        &quot;-ms-transition&quot;,
+        &quot;-o-transition&quot;,
+        &quot;transition&quot;,
+        &quot;-webkit-transition-delay&quot;,
+        &quot;-moz-transition-delay&quot;,
+        &quot;-ms-transition-delay&quot;,
+        &quot;-o-transition-delay&quot;,
+        &quot;transition-delay&quot;,
+        &quot;-webkit-transition-timing-function&quot;,
+        &quot;-moz-transition-timing-function&quot;,
+        &quot;-ms-transition-timing-function&quot;,
+        &quot;-o-transition-timing-function&quot;,
+        &quot;transition-timing-function&quot;,
+        &quot;-webkit-transition-duration&quot;,
+        &quot;-moz-transition-duration&quot;,
+        &quot;-ms-transition-duration&quot;,
+        &quot;-o-transition-duration&quot;,
+        &quot;transition-duration&quot;,
+        &quot;-webkit-transition-property&quot;,
+        &quot;-moz-transition-property&quot;,
+        &quot;-ms-transition-property&quot;,
+        &quot;-o-transition-property&quot;,
+        &quot;transition-property&quot;,
+        &quot;-webkit-transform&quot;,
+        &quot;-moz-transform&quot;,
+        &quot;-ms-transform&quot;,
+        &quot;-o-transform&quot;,
+        &quot;transform&quot;,
+        &quot;-webkit-transform-origin&quot;,
+        &quot;-moz-transform-origin&quot;,
+        &quot;-ms-transform-origin&quot;,
+        &quot;-o-transform-origin&quot;,
+        &quot;transform-origin&quot;,
+        &quot;-webkit-animation&quot;,
+        &quot;-moz-animation&quot;,
+        &quot;-ms-animation&quot;,
+        &quot;-o-animation&quot;,
+        &quot;animation&quot;,
+        &quot;-webkit-animation-name&quot;,
+        &quot;-moz-animation-name&quot;,
+        &quot;-ms-animation-name&quot;,
+        &quot;-o-animation-name&quot;,
+        &quot;animation-name&quot;,
+        &quot;-webkit-animation-duration&quot;,
+        &quot;-moz-animation-duration&quot;,
+        &quot;-ms-animation-duration&quot;,
+        &quot;-o-animation-duration&quot;,
+        &quot;animation-duration&quot;,
+        &quot;-webkit-animation-play-state&quot;,
+        &quot;-moz-animation-play-state&quot;,
+        &quot;-ms-animation-play-state&quot;,
+        &quot;-o-animation-play-state&quot;,
+        &quot;animation-play-state&quot;,
+        &quot;-webkit-animation-timing-function&quot;,
+        &quot;-moz-animation-timing-function&quot;,
+        &quot;-ms-animation-timing-function&quot;,
+        &quot;-o-animation-timing-function&quot;,
+        &quot;animation-timing-function&quot;,
+        &quot;-webkit-animation-delay&quot;,
+        &quot;-moz-animation-delay&quot;,
+        &quot;-ms-animation-delay&quot;,
+        &quot;-o-animation-delay&quot;,
+        &quot;animation-delay&quot;,
+        &quot;-webkit-animation-iteration-count&quot;,
+        &quot;-moz-animation-iteration-count&quot;,
+        &quot;-ms-animation-iteration-count&quot;,
+        &quot;-o-animation-iteration-count&quot;,
+        &quot;animation-iteration-count&quot;,
+        &quot;-webkit-animation-direction&quot;,
+        &quot;-moz-animation-direction&quot;,
+        &quot;-ms-animation-direction&quot;,
+        &quot;-o-animation-direction&quot;,
+        &quot;animation-direction&quot;
+    ],
+    [
+        &quot;content&quot;,
+        &quot;quotes&quot;,
+        &quot;counter-reset&quot;,
+        &quot;counter-increment&quot;,
+        &quot;resize&quot;,
+        &quot;cursor&quot;,
+        &quot;-webkit-user-select&quot;,
+        &quot;-moz-user-select&quot;,
+        &quot;-ms-user-select&quot;,
+        &quot;user-select&quot;,
+        &quot;nav-index&quot;,
+        &quot;nav-up&quot;,
+        &quot;nav-right&quot;,
+        &quot;nav-down&quot;,
+        &quot;nav-left&quot;,
+        &quot;-moz-tab-size&quot;,
+        &quot;-o-tab-size&quot;,
+        &quot;tab-size&quot;,
+        &quot;-webkit-hyphens&quot;,
+        &quot;-moz-hyphens&quot;,
+        &quot;hyphens&quot;,
+        &quot;pointer-events&quot;
+    ]
+]
+</code></pre>
+<h2 id="scss&#x76F8;&#x5173;">SCSS&#x76F8;&#x5173;</h2>
+<ul>
+<li>&#x63D0;&#x4EA4;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4E0D;&#x8981;&#x6709;@debug&#xFF1B;</li>
+<li>&#x58F0;&#x660E;&#x987A;&#x5E8F;&#xFF1A;<ul>
+<li><code>@extend</code></li>
+<li>&#x4E0D;&#x5305;&#x542B;<code>@content</code>&#x7684;<code>@include</code></li>
+<li>&#x5305;&#x542B;<code>@content</code>&#x7684;<code>@include</code></li>
+<li>&#x81EA;&#x8EAB;&#x5C5E;&#x6027;</li>
+<li>&#x5D4C;&#x5957;&#x89C4;&#x5219;</li>
+</ul>
+</li>
+<li><code>@import</code> &#x5F15;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x9700;&#x8981;&#x5F00;&#x5934;&#x7684;&apos;_&apos;&#x548C;&#x7ED3;&#x5C3E;&#x7684;&apos;.scss&apos;</li>
+<li><code>@extend&#x4E2D;</code> &#x4F7F;&#x7528;placeholder&#x9009;&#x62E9;&#x5668;&#xFF1B;&#x53BB;&#x6389;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x7236;&#x7EA7;&#x5F15;&#x7528;&#x7B26;&#x53F7;&apos;&amp;&apos;</li>
+<li>&#x4E0D;&#x5141;&#x8BB8;&#x6709;&#x7A7A;&#x7684;&#x89C4;&#x5219;&#xFF1B;</li>
+<li>&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF1B;</li>
+<li>&#x53BB;&#x6389;&#x5C0F;&#x6570;&#x70B9;&#x524D;&#x9762;&#x7684;0&#xFF1B;</li>
+<li>&#x5C5E;&#x6027;&#x503C;&apos;0&apos;&#x540E;&#x9762;&#x4E0D;&#x8981;&#x52A0;&#x5355;&#x4F4D;&#xFF1B;</li>
+<li>&#x540C;&#x4E2A;&#x5C5E;&#x6027;&#x4E0D;&#x540C;&#x524D;&#x7F00;&#x7684;&#x5199;&#x6CD5;&#x9700;&#x8981;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x4FDD;&#x6301;&#x5BF9;&#x9F50;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x7167;&#x53F3;&#x8FB9;&#x7684;&#x5199;&#x6CD5;&#xFF1B;</li>
+<li>&#x65E0;&#x524D;&#x7F00;&#x7684;&#x6807;&#x51C6;&#x5C5E;&#x6027;&#x5E94;&#x8BE5;&#x5199;&#x5728;&#x6709;&#x524D;&#x7F00;&#x7684;&#x5C5E;&#x6027;&#x540E;&#x9762;&#xFF1B;</li>
+<li>&#x4E0D;&#x8981;&#x5728;&#x540C;&#x4E2A;&#x89C4;&#x5219;&#x91CC;&#x51FA;&#x73B0;&#x91CD;&#x590D;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x91CD;&#x590D;&#x7684;&#x5C5E;&#x6027;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#x5219;&#x6CA1;&#x5173;&#x7CFB;&#xFF1B;</li>
+<li>&#x4E0D;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x91CC;&#x51FA;&#x73B0;&#x4E24;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x89C4;&#x5219;&#xFF1B;</li>
+<li>&#x7528;<code>border: 0;</code>&#x4EE3;&#x66FF;<code>border: none;</code>&#xFF1B;</li>
+<li>&#x9009;&#x62E9;&#x5668;&#x4E0D;&#x8981;&#x8D85;&#x8FC7;4&#x5C42;&#xFF08;&#x5728;scss&#x4E2D;&#x5982;&#x679C;&#x8D85;&#x8FC7;4&#x5C42;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x7528;&#x5D4C;&#x5957;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5199;&#xFF09;&#xFF1B;</li>
+<li>&#x53D1;&#x5E03;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4E0D;&#x8981;&#x6709;@import&#xFF1B;</li>
+<li>&#x5C3D;&#x91CF;&#x5C11;&#x7528;&apos;*&apos;&#x9009;&#x62E9;&#x5668;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="HTML规范.html" class="navigation navigation-prev " aria-label="Previous page:  HTML 规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="JavaScript规范.html" class="navigation navigation-next " aria-label="Next page:  JavaScript 规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":" CSS 规范","level":"1.3.3","depth":2,"next":{"title":" JavaScript 规范","level":"1.3.4","depth":2,"path":"前端代码规范/JavaScript规范.md","ref":"前端代码规范/JavaScript规范.md","articles":[]},"previous":{"title":" HTML 规范","level":"1.3.2","depth":2,"path":"前端代码规范/HTML规范.md","ref":"前端代码规范/HTML规范.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"前端代码规范/CSS规范.md","mtime":"2018-08-31T11:44:47.838Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-31T12:17:43.412Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
