@@ -317,6 +317,12 @@
 
 }
 </code></pre>
+<h2 id="&#x5E38;&#x91CF;&#x4F7F;&#x7528;">&#x5E38;&#x91CF;&#x4F7F;&#x7528;</h2>
+<p>&#x4EE3;&#x7801;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5730;&#x5740;&#x3001;&#x65F6;&#x95F4;&#x7B49;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x7B49;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5E38;&#x91CF;&#x4EE3;&#x66FF;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> HOME_PAGE_PATH = <span class="hljs-string">&quot;/path/home&quot;</span>;
+
+location.href = HOME_PAGE_PATH;
+</code></pre>
 <h2 id="&#x6570;&#x7EC4;&#x3001;&#x5BF9;&#x8C61;">&#x6570;&#x7EC4;&#x3001;&#x5BF9;&#x8C61;</h2>
 <p>&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x5F15;&#x53F7;&#xFF1B;</p>
 <p>&#x5BF9;&#x8C61;&#x4EE5;&#x7F29;&#x8FDB;&#x7684;&#x5F62;&#x5F0F;&#x4E66;&#x5199;&#xFF0C;&#x4E0D;&#x8981;&#x5199;&#x5728;&#x4E00;&#x884C;&#xFF1B;</p>
@@ -410,6 +416,22 @@
 <span class="hljs-keyword">var</span> y = <span class="hljs-string">&quot;foo&quot;</span>,
   z = <span class="hljs-string">&quot;&lt;div id=&quot;</span>test<span class="hljs-string">&quot;&gt;&lt;/div&gt;&quot;</span>;
 </code></pre>
+<h2 id="&#x903B;&#x8F91;&#x5206;&#x79BB;">&#x903B;&#x8F91;&#x5206;&#x79BB;</h2>
+<p>&#x6570;&#x636E;&#x5904;&#x7406;&#x5C3D;&#x91CF;&#x4E0E;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x5C3D;&#x91CF;&#x5206;&#x79BB;&#xFF0C;&#x6570;&#x636E;&#x5904;&#x7406;&#x7684;&#x903B;&#x8F91;&#x5E94;&#x8BE5;&#x5C01;&#x88C5;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x6570;&#x636E;&#x8BF7;&#x6C42;</span>
+<span class="hljs-keyword">this</span>.$axios
+  .post(urls.MES_GET_CITY_LIST_URL,postData)
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
+      <span class="hljs-keyword">var</span> data = response.data;
+
+      <span class="hljs-comment">// &#x6570;&#x636E;&#x5904;&#x7406;</span>
+      formatData(data);
+  });
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">formatData</span>(<span class="hljs-params">data</span>)</span>{
+  <span class="hljs-comment">// do something</span>
+}
+</code></pre>
 <h2 id="jshint">jshint</h2>
 <ul>
 <li>&#x7528;&apos;===&apos;, &apos;!==&apos;&#x4EE3;&#x66FF;&apos;==&apos;, &apos;!=&apos;&#xFF1B;</li>
@@ -463,7 +485,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":" JavaScript 规范","level":"1.3.4","depth":2,"next":{"title":" Vue 规范","level":"1.3.5","depth":2,"path":"前端代码规范/Vue规范.md","ref":"前端代码规范/Vue规范.md","articles":[]},"previous":{"title":" CSS 规范","level":"1.3.3","depth":2,"path":"前端代码规范/CSS规范.md","ref":"前端代码规范/CSS规范.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"前端代码规范/JavaScript规范.md","mtime":"2018-08-31T12:06:29.466Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-31T12:17:43.412Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":" JavaScript 规范","level":"1.3.4","depth":2,"next":{"title":" Vue 规范","level":"1.3.5","depth":2,"path":"前端代码规范/Vue规范.md","ref":"前端代码规范/Vue规范.md","articles":[]},"previous":{"title":" CSS 规范","level":"1.3.3","depth":2,"path":"前端代码规范/CSS规范.md","ref":"前端代码规范/CSS规范.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"前端代码规范/JavaScript规范.md","mtime":"2018-09-09T08:27:29.204Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-09T08:28:30.102Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -46,6 +46,16 @@ function doSomethingWithItems(items) {
 }
 ```
 
+## 常量使用
+
+代码中出现的地址、时间等字符串时等需要使用常量代替
+
+```js
+const HOME_PAGE_PATH = "/path/home";
+
+location.href = HOME_PAGE_PATH;
+```
+
 ## 数组、对象
 
 对象属性名不需要加引号；
@@ -169,6 +179,27 @@ var y = "foo",
   z = "<div id="test"></div>";
 
 ```
+
+## 逻辑分离
+
+数据处理尽量与数据请求尽量分离，数据处理的逻辑应该封装为另一个函数来使用。
+
+```js
+// 数据请求
+this.$axios
+  .post(urls.MES_GET_CITY_LIST_URL,postData)
+  .then(function(response) {
+      var data = response.data;
+         
+      // 数据处理
+      formatData(data);
+  });
+
+function formatData(data){
+  // do something
+}
+```
+
 
 ## jshint
 
